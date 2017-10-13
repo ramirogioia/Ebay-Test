@@ -52,7 +52,15 @@ public class ProductItem{
 			}//Descendant mode for the prices.
 			if(id.equals("name")){
 				System.out.println("----SORTED BY NAME----");
-				list.stream().sorted((object1, object2) -> object1.getNameTitle().compareTo(object2.getNameTitle()));
+				for(int rounds1=0; rounds1 < list.size()-1; rounds1++){
+					for(int rounds2=0; rounds2 < list.size()-1; rounds2++){
+						if(list.get(rounds2).getNameTitle().compareToIgnoreCase(list.get(rounds2+1).getNameTitle()) > 0){
+							ProductItem aux = list.get(rounds2+1);
+							list.set(rounds2+1, list.get(rounds2));
+							list.set(rounds2, aux);
+						}
+					}
+				}
 				}//Ascendant mode for the names of the products.
 			if(print){
 				Printer.printProductsInformation(list);

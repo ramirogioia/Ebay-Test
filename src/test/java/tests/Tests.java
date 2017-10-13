@@ -46,7 +46,7 @@ public class Tests {
 		}
 		driver.manage().window().maximize();
 		driver.navigate().to(reader.readNode("site").toLowerCase()); 
-	}
+	} 
 	
 	
 	@Test

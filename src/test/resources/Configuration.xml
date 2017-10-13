@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<browser>chrome</browser>
+	<site>http://www.ebay.com</site>
+	<searchProduct>shoes</searchProduct>
+	<customSearch>
+		<searchType1>Marca</searchType1>
+		<searchBrand1>PUMA</searchBrand1>
+	</customSearch>
+	<customSearch>
+	    <searchType2>Talla</searchType2>
+		<searchBrand2>10</searchBrand2>
+	</customSearch>
+	<sortBy>Precio</sortBy>
+	<typeSort>más bajo primero</typeSort>
+	<nResults>10</nResults>
+	<organiceList1>price</organiceList1>
+	<organiceList2>name</organiceList2>
+</configuration>

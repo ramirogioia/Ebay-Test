@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38726" started-at="2017-10-13T21:48:19Z" finished-at="2017-10-13T21:48:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38726" started-at="2017-10-13T21:48:19Z" finished-at="2017-10-13T21:48:57Z">
+      <class name="tests.Tests">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:tests.Tests@77caeb3e]" name="setupTest" is-config="true" duration-ms="9888" started-at="2017-10-13T18:48:19Z" finished-at="2017-10-13T18:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="customSearchTest()[pri:0, instance:tests.Tests@77caeb3e]" name="customSearchTest" duration-ms="26053" started-at="2017-10-13T18:48:28Z" finished-at="2017-10-13T18:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSearchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.Tests@77caeb3e]" name="tearDown" is-config="true" duration-ms="2739" started-at="2017-10-13T18:48:55Z" finished-at="2017-10-13T18:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -74,10 +74,9 @@ public class Tests {
 		searchPage.obtainFirstNResults(reader.readNode("nResults"), true);
 		searchPage.sortAndPrintList(reader.readNode("organiceList1"));
 		searchPage.sortAndPrintList(reader.readNode("organiceList2"));
-		Thread.sleep(2000);
 	}
 	
-	//make a new class for the prints, print of results, print of list, etc.
+	//TBD add the additional prints functions.
 	 
 	
 	@AfterMethod()

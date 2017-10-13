@@ -1,2 +1,4 @@
 # Ebay-Test
 Final test for the Automation course in Belatrix Automation workshop
+
+#IT RUNS ONLY ONE TEST. FOR CREATION, MODIFICATION OR ANY CHANGE IN THE TEST, MODIFY DE XML IN THE FOLDER src/test/resources AND CHANGE FOR THE DESIRED PARAMETERS TO HAVE YOUR CUSTOM SEARCH IN EBAY.# !!.

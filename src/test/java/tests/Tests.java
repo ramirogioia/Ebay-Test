@@ -78,7 +78,6 @@ public class Tests {
 		searchPage.sortAndPrintList(reader.readNode("organiceList2"));
 	}
 	
-	
 	@AfterMethod()
 	public void tearDown(){
 		

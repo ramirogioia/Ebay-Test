@@ -17,4 +17,9 @@ public class Printer {
 			printProductInformation(elements.get(i));
 		}
 	}
+	
+	public static void printNumberOfResults(String nResults, String searchType){
+		
+		System.out.println("You have: " + nResults.replace(" ", ".") + " results for the search by: " + searchType);
+	}
 }

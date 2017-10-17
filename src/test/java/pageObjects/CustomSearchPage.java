@@ -130,7 +130,7 @@ public class CustomSearchPage {
 		ProductItem.sortList(products, id, true);
 	}
 	
-	public String numbreOfResults(){
+	public String numberOfResults(){
 		return driver.findElement(nResults).getText();
 	}
 	

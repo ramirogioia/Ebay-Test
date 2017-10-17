@@ -9,6 +9,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import helpers.Printer;
 import helpers.XMLReader;
 import pageObjects.HomePage;
 import pageObjects.CustomSearchPage;
@@ -47,7 +49,7 @@ public class Tests {
 		driver.manage().window().maximize();
 		driver.navigate().to(reader.readNode("site").toLowerCase()); 
 	} 
-	
+	 
 	
 	@Test
 	public void customSearchTest() throws InterruptedException{
@@ -59,12 +61,12 @@ public class Tests {
 		
 		searchPage.checkCustomSearchPage();
 		searchPage.applyFilter(reader.readNode("searchType1"), reader.readNode("searchBrand1"));
-		System.out.println("You have: " + searchPage.numbreOfResults().replace(" ", ".") + " results for the search by: " + reader.readNode("searchType1"));
+		Printer.printNumberOfResults(searchPage.numberOfResults(), reader.readNode("searchType1"));
 		
 		searchPage.checkCustomSearchPage();
 		searchPage.checkFilters(reader.readNode("searchBrand1"));
 		searchPage.applyFilter(reader.readNode("searchType2"), reader.readNode("searchBrand2"));
-		System.out.println("You have: " + searchPage.numbreOfResults().replace(" ", ".") + " results for the search by: " + reader.readNode("searchType2"));
+		Printer.printNumberOfResults(searchPage.numberOfResults(), reader.readNode("searchType2"));
 		
 		searchPage.checkCustomSearchPage();
 		searchPage.checkFilters(reader.readNode("searchBrand2"));
@@ -76,8 +78,6 @@ public class Tests {
 		searchPage.sortAndPrintList(reader.readNode("organiceList2"));
 	}
 	
-	//TBD add the additional prints functions
-	 
 	
 	@AfterMethod()
 	public void tearDown(){
